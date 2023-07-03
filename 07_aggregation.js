@@ -7,6 +7,7 @@ db.orders.aggregate( [
           "date": { $gte: new ISODate( "2020-01-30" ), $lt: new ISODate( "2022-01-30" ) }
        }
     },
+    
  
     // Stage 2: Group remaining documents by date and calculate results
     {
